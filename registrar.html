@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="principal">
+        <div class="container">
+            <header class="cabecera">
+                <nav class="barra-navegacion">
+                    <div class="logo">
+                        <img src="./img/logo.avif" alt="" />
+                    </div>
+                    <div class="enlaces-nav">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="registrar.html" class="nav-item nav-link">Solicitudes</a>
+                        <a href="quienesSomos.html" class="nav-item nav-link">Quienes Somos</a>
+                    </div>
+                </nav>
+            </header>
+            <div class="page-header"></div>
+            content: '';
+            <section class="hero">
+                <h1>
+                    ¿Tienes una propiedad? ¡ <span> Regístrala </span>en segundos!
+                </h1>
+
+                <a href="#formulario-contacto" class="boton-accion"> Registrar</a>
+            </section>
+
+            <section id="contacto" class="contacto">
+                <h1>Registra tu <strong>Inmueble</strong> con nosotros</h1>
+                <form class="formulario-contacto" id="formulario-contacto">
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" class="control-formulario" required
+                        placeholder="Ingrese el nombre">
+                    </div>
+                    <div class="grupo-formulario">
+                         <label for="descripcion">Descripción Pequeña:</label>
+                        <textarea id="descripcion" rows="3"class="control-formulario" required
+                         placeholder="Ingrese una breve descripción"></textarea>
+                    </div>
+                    <div class="grupo-formulario">
+                       <label for="numCuartos">Cantidad de Cuartos:</label>
+                        <input type="number" class="control-formulario" id="numCuartos"
+                            placeholder="Ingrese el número de cuartos">
+                    </div>
+                    <div class="grupo-formulario">
+                       <label for="numBanos">Cantidad de Baños:</label>
+                        <input type="number" class="control-formulario" id="numBanos"
+                            placeholder="Ingrese el número de Baños">
+                    </div>
+                    <div class="grupo-formulario">
+                       <label for="numGaraje">Cantidad de Garaje:</label>
+                        <input type="number" class="control-formulario" id="numGaraje"
+                            placeholder="Ingrese el número de Garaje">
+                    </div>
+                    <div class="grupo-formulario">
+                       <label for="precio">Precio:</label>
+                        <input type="number" class="control-formulario" id="precio"
+                            placeholder="Ingrese el Precio del inmueble">
+                    </div>
+                    <button type="button" class="boton-accion"onclick="obtenerInformacio()"> Enviar Registro</button>
+                </form>
+            </section>
+        </div>
+        <br />
+
+        <footer class="pie-pagina">
+            <div class="enlaces-sociales">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <p>&copy; 2025 Laura</p>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
